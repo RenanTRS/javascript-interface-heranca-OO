@@ -10,3 +10,18 @@ export class ContaPoupanca{
     }
 }
 ```
+
+# Aula02 - Herança
+## Herança:
+- ```extends``` Serve para herdar dados e outra conta;  
+```
+import { Conta } from "./Conta.js";
+export class ContaCorrent extends Conta{
+}
+```
+- ```super()``` Serve para referenciar a classe mãe;  
+```
+constructor(cliente, agencia){
+	super(0, cliente, agencia);
+}
+```
