@@ -25,3 +25,11 @@ constructor(cliente, agencia){
 	super(0, cliente, agencia);
 }
 ```
+## Super e sobrescrita:
+```
+teste(){
+	super.teste(); //Vai chamar o método teste da classe Conta
+	console.log("teste na classe conta corrente")
+}
+```
+- Para sobreescrever **basta escrever um novo método com o mesmo nome**;  
