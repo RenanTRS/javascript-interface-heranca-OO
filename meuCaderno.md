@@ -19,7 +19,7 @@ import { Conta } from "./Conta.js";
 export class ContaCorrent extends Conta{
 }
 ```
-- ```super()``` Serve para referenciar a classe mãe;  
+- ```super()``` Serve para referenciar (chamar algo) a classe mãe;  
 ```
 constructor(cliente, agencia){
 	super(0, cliente, agencia);
