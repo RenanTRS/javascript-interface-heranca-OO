@@ -15,17 +15,25 @@ export class Conta{
     get cliente(){
         return this._cliente;
     }
-    
+
     get saldo(){
         return this._saldo;
     }
 
     sacar(valor){
-        if(this._saldo >= valor){
-            this._saldo -= valor;
-            return valor;
-        }
+        let taxa = 1;
+        return this._sacar(valor, taxa);
     }
+    _sacar(valor, taxa){
+        const valorSacado = valor * taxa;
+        if(this._saldo >= valorSacado){
+            this._saldo -= valorSacado;
+            return valorSacado;
+        }
+
+        return 0;
+    }
+    
     depositar(valor){
         if(valor > 0){
             this._saldo += valor;
