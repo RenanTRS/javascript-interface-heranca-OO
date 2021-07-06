@@ -43,7 +43,7 @@ export class Conta{
         }
     }
     transferir(valor, conta){
-        const valorSacado = sacar(valor);
+        const valorSacado = this.sacar(valor);
         conta.depositar(valorSacado);
     }
 }
