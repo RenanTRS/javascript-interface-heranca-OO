@@ -32,4 +32,19 @@ teste(){
 	console.log("teste na classe conta corrente")
 }
 ```
-- Para sobreescrever **basta escrever um novo método com o mesmo nome**;  
+- Para sobreescrever **basta escrever um novo método com o mesmo nome**; 
+
+# Aula03
+## Classes abstratas: 
+- ```throw``` Serve para sair da classe com uma erro (exceção);  
+```
+if(this.construtor == Conta){
+	throw new Error("Você não deveria instanciar um objeto do tipo Conta");
+}
+```
+## Métodos Abstratos:  
+- Em javascript é apenas um método sem corpo;  
+```
+sacar(valor){
+}
+```

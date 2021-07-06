@@ -5,6 +5,9 @@ export class Conta{
         this._saldo = saldoInicial;
         this._cliente = cliente;
         this._agencia = agencia;
+        if(this.constructor == Conta){
+            throw new Error("Classe Abstrata");
+        }
     }
 
     set cliente(novoCliente){
@@ -21,8 +24,8 @@ export class Conta{
     }
 
     sacar(valor){
-        let taxa = 1;
-        return this._sacar(valor, taxa);
+        /*Método Abstrato*/
+        throw new Error("Método Abstrato");
     }
     _sacar(valor, taxa){
         const valorSacado = valor * taxa;
