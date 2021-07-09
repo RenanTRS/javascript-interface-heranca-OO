@@ -11,10 +11,10 @@ diretor.cadastrarSenha(664433)
 
 const cliente = new Cliente("Renan", 32452, 223311)
 
-const gerenteEstaLogado = SistemaAutenticacao.login(gerente, "444333");
+const gerenteEstaLogado = SistemaAutenticacao.login(gerente, 444333);
 const diretorEstaLogado = SistemaAutenticacao.login(diretor, "664433");
 
 const clienteEstaLogado = SistemaAutenticacao.login(cliente, 223311);
-
+//console.log(diretor.autenticar("664433"));
 console.log(gerenteEstaLogado, diretorEstaLogado);
 console.log(clienteEstaLogado);
