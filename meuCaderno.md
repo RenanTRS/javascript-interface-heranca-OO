@@ -48,3 +48,15 @@ if(this.construtor == Conta){
 sacar(valor){
 }
 ```
+# Aula05 - Interfaces e Duck Type
+## Verificando propriedades e tipos:  
+- Verificando se existe a função:  
+```
+if(SistemaAutenticacao.ehAutenticavel(autenticavel)){
+	return autenticavel.autenticar(senha);
+}
+
+static ehAutenticavel(autenticavel){
+	return "autenticar" in autenticavel && autenticavel.autenticar instanceof Function;
+}
+```
